@@ -47,12 +47,6 @@ function SocialLink({ url, icon }) {
   );
 }
 
-function Highlight({ color, children }) {
-  return (
-    <span className={`text-${color}-700 bg-${color}-200 px-1`}>{children}</span>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -71,11 +65,21 @@ export default function Home() {
         </div>
         <div className="text-2xl max-w-screen-lg sm:text-3xl md:text-4xl md:leading-snug md:font-light lg:text-5xl xl:font-normal">
           <p className="mb-5">
-            I'm a self-taught <Highlight color="red">developer</Highlight> with
+            I'm a self-taught{" "}
+            <span className="text-red-700 bg-red-200 px-1">developer</span> with
             experience as a{" "}
-            <Highlight color="indigo">technical product manager</Highlight>,{" "}
-            <Highlight color="green">startup executive</Highlight> and{" "}
-            <Highlight color="orange">data scientist</Highlight>.
+            <span className="text-indigo-700 bg-indigo-200 px-1">
+              technical product manager
+            </span>
+            ,{" "}
+            <span className="text-green-700 bg-green-200 px-1">
+              startup executive
+            </span>{" "}
+            and{" "}
+            <span className="text-orange-700 bg-orange-200 px-1">
+              data scientist
+            </span>
+            .
           </p>
           <p>
             Let's solve some problems together{" "}
