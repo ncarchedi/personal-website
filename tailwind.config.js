@@ -5,7 +5,7 @@ module.exports = {
     // defaultLineHeights: true,
     standardFontWeights: true,
   },
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
+  purge: ["./src/**/*.js"],
   theme: {
     extend: {
       fontSize: {
