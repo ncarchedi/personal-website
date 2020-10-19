@@ -9,18 +9,22 @@ import SEO from "../components/seo";
 
 const socialList = [
   {
+    title: "Email",
     url: "mailto:nick.carchedi@gmail.com",
     icon: <FaRegEnvelope />,
   },
   {
+    title: "LinkedIn",
     url: "https://www.linkedin.com/in/nickcarchedi/",
     icon: <FaLinkedinIn />,
   },
   {
+    title: "GitHub",
     url: "https://github.com/ncarchedi",
     icon: <FaGithub />,
   },
   {
+    title: "Twitter",
     url: "https://twitter.com/NickCarchedi",
     icon: <FaTwitter />,
   },
@@ -34,13 +38,15 @@ function Emoji({ symbol, label, ...otherProps }) {
   );
 }
 
-function SocialLink({ url, icon }) {
+function SocialLink({ title, url, icon }) {
   return (
     <a
-      className="mr-6 sm:mr-8 md:mr-10 lg:mr-12 xl:mr-16"
+      className="mr-6 hover:text-red-500 sm:mr-8 md:mr-10 lg:mr-12 xl:mr-16"
       href={url}
       target="_blank"
       rel="noreferrer"
+      title={title}
+      aria-label={title}
     >
       {icon}
     </a>
@@ -60,7 +66,12 @@ export default function Home() {
         </h1>
         <div className="flex mb-8 text-2xl sm:text-3xl md:text-4xl xl:text-5xl xl:mb-12">
           {socialList.map((social) => (
-            <SocialLink key={social.url} url={social.url} icon={social.icon} />
+            <SocialLink
+              key={social.url}
+              title={social.title}
+              url={social.url}
+              icon={social.icon}
+            />
           ))}
         </div>
         <div className="text-2xl max-w-screen-lg sm:text-3xl md:text-4xl md:leading-snug md:font-light lg:text-5xl xl:font-normal">
