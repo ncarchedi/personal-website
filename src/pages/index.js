@@ -41,7 +41,7 @@ function Emoji({ symbol, label, ...otherProps }) {
 function SocialLink({ title, url, icon }) {
   return (
     <a
-      className="mr-6 hover:text-red-500 sm:mr-8 md:mr-10 lg:mr-12 xl:mr-16"
+      className="mr-6 hover:text-red-700 sm:mr-8 md:mr-10 lg:mr-12 xl:mr-16"
       href={url}
       target="_blank"
       rel="noreferrer"
@@ -74,7 +74,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="text-2xl max-w-screen-lg sm:text-3xl md:text-4xl md:leading-snug md:font-light lg:text-5xl xl:font-normal">
+        <div className="text-2xl max-w-screen-lg sm:text-3xl md:text-4xl md:leading-snug md:font-light lg:text-5xl">
           <p className="mb-5">
             I'm a self-taught{" "}
             <span className="text-red-700 bg-red-200 px-1">developer</span> with
@@ -90,6 +90,15 @@ export default function Home() {
             <span className="text-orange-700 bg-orange-200 px-1">
               data scientist
             </span>
+            . Here's my{" "}
+            <a
+              className="border-red-700 border-b-4 md:border-b-6 xl:border-b-8"
+              href="https://www.notion.so/Nick-Carchedi-f18aebc1c07e4ba38eac62a89c90ac7b"
+              target="_blank"
+              rel="noreferrer"
+            >
+              resume
+            </a>
             .
           </p>
           <p>
@@ -104,7 +113,7 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="cta px-4 py-2 text-3xl bg-red-500 text-white cursor-pointer rounded sm:text-4xl md:px-6 md:py-3 lg:px-8">
+            <div className="cta px-4 py-2 text-3xl bg-red-700 text-white cursor-pointer rounded sm:text-4xl md:px-6 md:py-3 lg:px-8">
               Hire Me
             </div>
           </a>

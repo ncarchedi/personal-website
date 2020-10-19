@@ -12,6 +12,9 @@ module.exports = {
         "7xl": "5rem",
         "8xl": "6rem",
       },
+      borderWidth: {
+        6: "6px",
+      },
       animation: {
         wave: "wave 2.5s infinite",
         point: "point 1.3s infinite",
