@@ -92,7 +92,7 @@ export default function Home() {
             </span>
             . Here's my{" "}
             <a
-              className="border-red-700 border-b-4 md:border-b-6 xl:border-b-8"
+              className="border-red-700 hover:border-red-200 border-b-4 md:border-b-6 xl:border-b-8"
               href="https://www.notion.so/Nick-Carchedi-f18aebc1c07e4ba38eac62a89c90ac7b"
               target="_blank"
               rel="noreferrer"
